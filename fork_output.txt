@@ -1,0 +1,41 @@
+&foo is 0x55555555a090 (virtual addr), which has a
+    virtual page num of 0x55555555a and offset of 0x090
+Page not present in page table!
+
+ === setting foo = 7...
+
+&foo is 0x55555555a090 (virtual addr), which has a
+    virtual page num of 0x55555555a and offset of 0x090
+VPN mapped by page table to physical frame num 0x00000027a3fc
+    so the physical address is 0x00027a3fc090
+
+ === child's version of foo:
+
+&foo is 0x55555555a090 (virtual addr), which has a
+    virtual page num of 0x55555555a and offset of 0x090
+VPN mapped by page table to physical frame num 0x00000027a3fc
+    so the physical address is 0x00027a3fc090
+
+ === parent's version of foo:
+
+&foo is 0x55555555a090 (virtual addr), which has a
+    virtual page num of 0x55555555a and offset of 0x090
+VPN mapped by page table to physical frame num 0x00000027a3fc
+    so the physical address is 0x00027a3fc090
+
+ === parent setting foo = 8
+ === parent's version of foo:
+
+&foo is 0x55555555a090 (virtual addr), which has a
+    virtual page num of 0x55555555a and offset of 0x090
+VPN mapped by page table to physical frame num 0x000000242ab9
+    so the physical address is 0x000242ab9090
+
+ === child setting foo = 7
+ === child's version of foo:
+
+&foo is 0x55555555a090 (virtual addr), which has a
+    virtual page num of 0x55555555a and offset of 0x090
+VPN mapped by page table to physical frame num 0x00000027a3fc
+    so the physical address is 0x00027a3fc090
+

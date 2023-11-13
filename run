@@ -1,0 +1,5 @@
+#!/usr/bin/sh
+
+if [ "$#" -ne 1 ]; then echo Usage: $0 COMMAND; exit 1; fi
+
+make && sudo setarch `uname -m` -R "./$@"
